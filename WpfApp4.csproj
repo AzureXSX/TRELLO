@@ -9,11 +9,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resources\Avatar.png" />
+    <None Remove="Resources\Trello.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="..\..\..\Pictures\Avatar.png" Link="Resources\Avatar.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </Resource>
+    <Resource Include="Resources\Avatar.png" />
     <Resource Include="Resources\Trello.ico" />
+    <Resource Include="Resources\Trello.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
@@ -30,10 +40,6 @@
 
   <ItemGroup>
     <None Update="Resources\Trello.ico">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Update="Resources\Trello.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
